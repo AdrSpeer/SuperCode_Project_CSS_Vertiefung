@@ -1,0 +1,483 @@
+/* Basics */
+
+@font-face {
+  font-family: one;
+  src: url(./assets/fonts/NixieOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: aleg;
+  src: url(./assets/fonts/AlegreyaSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: alegsans;
+  src: url(./assets/fonts/AlegreyaSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ! Header */
+
+header {
+  background: url(./assets/img/bgr_header.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+nav h2 {
+  color: white;
+  font-family: aleg;
+  font-size: clamp(3rem, 3.2vw, 3.6rem);
+  padding-top: 2.5rem;
+}
+
+header article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header div h1 {
+  color: white;
+  font-family: one;
+  font-weight: 400;
+  font-size: clamp(4.6rem, 4.8vw, 5.2rem);
+  text-transform: uppercase;
+}
+
+header div p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: aleg;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+  text-transform: uppercase;
+}
+
+/* ! Main */
+
+/* 1. Section */
+
+.latestwork {
+  padding: 6rem 13.5rem;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.headline h3 {
+  color: #3a4f52;
+  font-family: alegsans;
+  font-size: clamp(3.2rem, 3.5vw, 3.6rem);
+  padding-bottom: 1.3rem;
+}
+
+.headline p {
+  color: #6a6a6a;
+  font-family: Helvetica;
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  font-weight: 300;
+}
+
+.btn {
+  color: #3a4f52;
+  border: 1px solid #3a4f52;
+  padding: 1.4rem 1.8rem;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  display: inline-block;
+}
+
+.lastwork article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box {
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.img-box img {
+  height: 26rem;
+  width: 38.3rem;
+}
+
+/* 2. Section */
+
+.services {
+  background: url(./assets/img/section2.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.services article {
+  height: 80%;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  display: flex;
+  padding: 0 1rem;
+}
+
+.head-services {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+
+.head-services h4 {
+  color: white;
+  font-size: clamp(3.4rem, 3.5vw, 3.7rem);
+  padding-top: 1.8rem;
+  font-family: alegsans;
+}
+
+.head-services p {
+  color: white;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  font-family: alegsans;
+}
+
+.desc-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+}
+
+.desc-services h6 {
+  color: white;
+  font-size: clamp(2.6rem, 2.8vw, 3rem);
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.desc-services p {
+  color: white;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: Helvetica;
+  line-height: 2rem;
+}
+
+/* 3. Section */
+
+.blog {
+  padding: 6rem 13.5rem;
+}
+
+.blog article {
+  display: flex;
+}
+
+.btn1 {
+  margin-right: 1.2rem;
+}
+
+.blog article img {
+  width: 37rem;
+  margin-bottom: 1.8rem;
+}
+
+.blog h6 {
+  color: #3a4f52;
+  font-family: alegsans;
+  font-size: clamp(2.8rem, 3vw, 3.2rem);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.date {
+  color: #6a6a6a;
+  font-family: Helvetica;
+  font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  color: #6a6a6a;
+  font-family: Helvetica;
+  font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  line-height: 2rem;
+  font-weight: 200;
+  padding-right: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-more {
+  color: #4da7ca;
+  font-family: Helvetica;
+  font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  font-weight: 200;
+}
+
+/* 4. Section */
+
+.quote {
+  height: 50vh;
+  background: url(./assets/img/section4.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote article {
+  height: 60%;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.quote p {
+  color: white;
+  font-family: alegsans;
+  font-size: clamp(3.2rem, 3.4vw, 3.6rem);
+  font-weight: 500;
+  text-align: center;
+  padding-top: 1.8rem;
+}
+
+.quote a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(1.6rem, 1.8vw, 2rem);
+  font-weight: 200;
+  display: inline-block;
+  margin-top: 6rem;
+  border: 1px white solid;
+  padding: 0.9rem 2rem;
+}
+
+/* 5. Section */
+
+.testi {
+  padding: 6rem 13.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testi-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testi-headline h4 {
+  font-family: alegsans;
+  color: #3a4f52;
+  text-align: center;
+  font-size: clamp(3.4rem, 3.6vw, 3.8rem);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.testi-headline p {
+  font-family: Helvetica, sans-serif;
+  color: #6a6a6a;
+  text-align: center;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  font-weight: 200;
+  margin-bottom: 6.5rem;
+}
+
+.testi article {
+  display: flex;
+  gap: 3rem;
+}
+
+.testi article img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  margin-bottom: 1.7rem;
+  object-fit: cover;
+}
+
+.testi article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testi-text,
+.name {
+  color: #6a6a6a;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: clamp(1.1rem, 1.3vw, 1.5rem);
+  font-weight: 400;
+  line-height: 2.2rem;
+  width: 35rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+/* 6. Section */
+
+.contact {
+  background: url(./assets/img/section5.png) no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact article {
+  height: 80%;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  display: flex;
+  padding: 0 1rem;
+}
+
+.contact article div {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.contact article div h3 {
+  color: #fff;
+  text-align: center;
+  font-family: alegsans;
+  font-size: clamp(3.4rem, 3.6vw, 3.8rem);
+  font-weight: 400;
+  padding-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.contact article div p {
+  color: #fff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  font-weight: 200;
+  margin-bottom: 6rem;
+}
+
+.contact article form {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#name,
+#email,
+#text {
+  width: 45%;
+}
+
+#name,
+#email {
+  height: 3.4rem;
+}
+
+#text {
+  height: 5.4rem;
+}
+
+#submit {
+  padding: 0.8rem 1.5rem;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: solid white 0.5px;
+  border-radius: 0.4rem;
+  padding-left: 1.5rem;
+}
+
+input[type="email"] {
+  background: transparent;
+  border: solid white 0.5px;
+  border-radius: 0.4rem;
+  padding-left: 1.5rem;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: solid white 0.5px;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+/* ! Footer */
+
+footer {
+  background-color: #2b3e51;
+  height: 10vh;
+  padding: 6rem 13.5rem;
+}
+
+footer p {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  font-weight: 200;
+}
