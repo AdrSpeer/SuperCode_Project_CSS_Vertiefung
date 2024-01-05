@@ -1,3 +1,1 @@
 # SuperCode_Project_CSS_Vertiefung
-# AdrSpeer-SuperCode_Project_CSS_Vertiefung
-# AdrSpeer-SuperCode_Project_CSS_Vertiefung
